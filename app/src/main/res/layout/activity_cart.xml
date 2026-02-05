@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:gravity="center">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="6dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp"
+            android:padding="16dp"
+            android:layout_marginTop="12dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp">
+
+                <ImageView
+                    android:id="@+id/back_arrow"
+                    android:layout_width="42dp"
+                    android:layout_height="32dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="8dp"
+                    android:clickable="true"
+                    android:contentDescription="Back"
+                    android:focusable="true"
+                    android:src="@drawable/baseline_arrow_back_24"
+                    app:tint="?android:textColorPrimary"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="Your Cart"
+                android:textColor="?android:textColorPrimary"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/savingsbanner"
+        android:text="₹44 Savings on this order with SUPER SAVER"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_black"
+        android:gravity="center"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="@color/green"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        android:padding="16dp"
+        android:layout_marginTop="12dp"
+        android:background="?android:colorBackground"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="View Coupons and Offers"
+            android:textSize="16sp"
+            android:textColor="?android:textColorPrimary"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_black"
+            android:gravity="center_vertical"
+            app:itemIconTint="?android:textColorPrimary"
+            android:drawableEnd="@drawable/outline_keyboard_arrow_right_24"
+            android:paddingVertical="10dp"
+            />
+
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Delivery in 6 minutes"
+        android:textSize="16sp"
+        android:textColor="?android:textColorPrimary"
+        android:textStyle="bold"
+        android:fontFamily="@font/montserrat_black"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/baseline_access_time_24"
+        android:paddingVertical="10dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cart_list"
+        android:layout_weight="1"
+        android:paddingTop="10dp"
+        android:scrollbars="vertical"
+        android:fontFamily="@font/montserrat_black"
+        android:textColor="?android:textColorPrimary" />
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Total:₹0"
+            android:textSize="18sp"
+            android:textColor="?android:textColorPrimary"
+            android:textStyle="bold"
+            android:fontFamily="@font/montserrat_black"
+            android:gravity="center"
+            android:background="?android:colorBackground"
+            android:padding="10dp"
+            />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_checkout"
+        android:text="Proceed for Payment"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        />
+
+
+
+
+</LinearLayout>

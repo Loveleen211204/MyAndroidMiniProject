@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:colorBackground"
+    android:padding="15dp"
+    android:layout_marginTop="2dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/pink"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="7dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/personbaseline_foreground"
+            android:contentDescription="Profile Picture"
+            tools:ignore="MissingClass"
+            />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:id="@+id/search_bar"
+            android:hint="Search for lego"
+            android:fontFamily="@font/montserrat_medium"
+            android:background="?android:colorBackground"
+                    android:drawableLeft="@drawable/outline_content_paste_search_24"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cash_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="75 Free Cash"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/pink"
+        android:stateListAnimator="@null"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/first_text"
+        android:layout_below="@id/cash_button"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Free Cash is Temporarily Unavailable"
+        android:textStyle="bold"
+        android:textColor="@color/grey"
+        android:background="@color/cream"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/second_text"
+        android:layout_below="@id/first_text"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Trending Near You"
+        android:textStyle="bold"
+        android:textColor="?android:textColorPrimary"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/second_text"
+        android:layout_marginTop="9dp"
+        android:padding="5dp"
+        android:scrollbars="vertical" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="?android:textColorPrimary"
+        app:itemTextColor="?android:textColorPrimary"
+        app:itemIconSize="30dp"
+        android:padding="10dp"
+        android:background="?android:colorBackground"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bott_nav_menu"
+        />
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="?android:colorBackground"
+    android:layout_marginTop="6dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/fashion"
+        android:text="Fashion Store"
+        android:textSize="18sp"
+        android:textColor="?android:textColorPrimary"
+        android:fontFamily="@font/montserrat_black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="?android:colorBackground"
+        android:layout_marginBottom="18dp"
+        android:drawableRight="@android:drawable/ic_menu_search"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Textfor"
+        android:text="Categories"
+        android:textSize="18sp"
+        android:textColor="?android:textColorPrimary"
+        android:fontFamily="@font/montserrat_black"
+        android:textStyle="bold"
+        android:gravity="left"
+        android:padding="10dp"
+        android:background="?android:colorBackground"
+        android:layout_marginBottom="18dp"
+        android:layout_below="@id/fashion"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView"
+        android:padding="5dp"
+        android:layout_marginTop="8dp"
+        android:scrollbars="vertical"
+        android:layout_below="@id/Textfor"
+        android:fontFamily="@font/montserrat_black"
+        />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        android:layout_alignParentBottom="true"
+        app:itemIconTint="?android:textColorPrimary"
+        app:itemTextColor="?android:textColorPrimary"
+        app:itemIconSize="30dp"
+        android:padding="10dp"
+        android:background="?android:colorBackground"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bott_nav_menu"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/download"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zepto"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tagline"
+        android:layout_marginTop="69dp"
+        android:paddingLeft="2dp"
+        android:text="Groceries \nDeleiverd in \n10 minutes,"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/phoneInput"
+        android:layout_below="@id/tagline"
+        android:layout_marginHorizontal="1dp"
+        android:hint="+91 Enter Phone Number"
+        android:background="@drawable/edittext_background"
+        android:inputType="phone"
+        android:textColorHint="#999999"
+        android:textSize="18sp"
+        android:padding="13dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/continueButton"
+        android:layout_below="@id/phoneInput"
+        android:layout_marginTop="10dp"
+        android:text="Continue"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="1dp"
+        android:backgroundTint="@color/pink"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/termText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="By Continuing, you agree to our terms Conditions and Policies."
+        android:paddingLeft="28dp"
+        android:textStyle="italic"
+        android:textColor="#FFFFFF"
+        android:fontFamily="serif-monospace"
+        android:textSize="14sp"
+        android:gravity="center"
+        />
+
+</RelativeLayout>
